@@ -19,13 +19,13 @@
 <body style='margin: 0; overflow: hidden;'>
     <a-scene stats pool__virus="mixin: virus; size: 10"
 		vr-mode-ui="enabled: false"
-		cursor='rayOrigin: mouse; fuse: true'
+		cursor='rayOrigin: mouse; fuse: false'
 		embedded 
         raycaster="objects: [virus];"
 	>
 
-        <a-camera id="target-box" rotation-reader>
-		</a-camera>
+        <a-entity camera id="target-box" rotation-reader>
+		</a-entity>
 		<a-assets>
 			<a-asset-item id="virus_model" src="virus.gltf"></a-asset-item>
 			<img id="my-texture" src="texture.png">
