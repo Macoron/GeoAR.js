@@ -21,7 +21,7 @@
     <a-scene stats pool__virus="mixin: virus; size: 10"
 		cursor='rayOrigin: mouse; fuse: true; fuseTimeout: 0;'
 		vr-mode-ui="enabled: false"
-		arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'
+		arjs
         raycaster="objects: [virus];"
 	>
 
@@ -38,7 +38,7 @@
 		</a-assets>
 		
 		<a-entity virus_spawner></a-entity>
-		<a-entity geometry="primitive: plane" position="0 0 0" scale="4 4 4" rotation="-90 0 0" material="src: #my-texture; transparent: true" rotating-camera="target: #target-box"></a-entity>
+		<a-entity geometry="primitive: plane" position="0 0 0" scale="3 3 3" rotation="-90 0 0" material="src: #my-texture; transparent: true" rotating-camera="target: #target-box"></a-entity>
 		
 	</a-scene>
 </body>
